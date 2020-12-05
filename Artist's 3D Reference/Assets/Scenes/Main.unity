@@ -312,7 +312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraUserView: {fileID: 963194227}
-  ground: {fileID: 1170889958}
+  target: {fileID: 1170889958}
   movementSpeed: 0.1
 --- !u!1 &1170889958
 GameObject:
