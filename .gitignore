@@ -1,0 +1,9 @@
+# Whitelisting Patterns: https://jasonstitt.com/gitignore-whitelisting-patterns
+
+# Ignore everything in project folder
+/Artist's 3D Reference/*
+
+# Exempt the following
+!.gitignore
+!Artist's 3D Reference/Assets/
+!Artist's 3D Reference/ProjectSettings/

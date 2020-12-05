@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
+    Vector3 initialPosition = gameObject.transform.position;
+
     // Start is called before the first frame update
     void Start()
     {
