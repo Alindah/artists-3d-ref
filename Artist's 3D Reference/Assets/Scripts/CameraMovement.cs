@@ -15,6 +15,12 @@ public class CameraMovement : MonoBehaviour
 
     void Update()
     {
+        UpdateCameraKeyboard();
+        UpdateCameraMouse();        
+    }
+
+    private void UpdateCameraKeyboard()
+    {
         // Lock view onto center of world while holding shift
         if (Input.GetKey(KeyCode.LeftShift))
             transform.LookAt(target.transform);
@@ -39,6 +45,12 @@ public class CameraMovement : MonoBehaviour
         if (Input.GetKey("q"))
             transform.RotateAround(target.transform.position, Vector3.up, 200 * Time.deltaTime);
         else if (Input.GetKey("e"))
-            transform.RotateAround(target.transform.position, Vector3.down, 200 * Time.deltaTime);        
+            transform.RotateAround(target.transform.position, Vector3.down, 200 * Time.deltaTime);
+    }
+
+    private void UpdateCameraMouse()
+    {
+        if (Input.GetMouseButton(2))
+            Debug.Log("Pressed middle click.");
     }
 }
